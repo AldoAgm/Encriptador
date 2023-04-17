@@ -32,9 +32,21 @@ function encryptText() {
 }
 
 // Función para desencriptar el texto en el cuadro de texto derecho
+// function decryptText() {
+//     var textboxRight = document.getElementById("textbox-right");
+//     var text = textboxRight.value.toLowerCase();
+//     text = text.replace(/enter/g, "e");
+//     text = text.replace(/imes/g, "i");
+//     text = text.replace(/ai/g, "a");
+//     text = text.replace(/ober/g, "o");
+//     text = text.replace(/ufat/g, "u");
+//     textboxRight.value = text;
+//     }
+// Función para desencriptar el texto en el cuadro de texto derecho
 function decryptText() {
+    var textboxInput = document.getElementById("textbox-input");
     var textboxRight = document.getElementById("textbox-right");
-    var text = textboxRight.value.toLowerCase();
+    var text = textboxInput.value.toLowerCase();
     text = text.replace(/enter/g, "e");
     text = text.replace(/imes/g, "i");
     text = text.replace(/ai/g, "a");
@@ -42,7 +54,6 @@ function decryptText() {
     text = text.replace(/ufat/g, "u");
     textboxRight.value = text;
     }
-
 // Función para copiar el texto en el cuadro de texto derecho
 function copyText(message) {
     var textboxRight = document.getElementById("textbox-right");
