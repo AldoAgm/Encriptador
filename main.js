@@ -57,8 +57,10 @@ function decryptText() {
 // Función para copiar el texto en el cuadro de texto derecho
 function copyText(message) {
     var textboxRight = document.getElementById("textbox-right");
+    var textboxLeft = document.getElementById("textbox-input");
     var notification = document.getElementById("notification");
     textboxRight.select();
+    textboxLeft.value = textboxRight.value;
     document.execCommand("copy");
     notification.innerHTML = "Texto copiado";
     notification.style.opacity = "1";

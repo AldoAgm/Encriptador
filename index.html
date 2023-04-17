@@ -27,7 +27,7 @@
 
     <div class="container">
         <div class="textbox left">
-            <input type="text" id="textbox-input" placeholder="Ingrese texto a encriptar" oninput="hideImage()">
+            <textarea id="textbox-input" placeholder="Ingrese texto a encriptar" name="" id="" cols="40" rows="25" oninput="hideImage()"></textarea>
             <p> <i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
             <div class="buttons">
                 <button class="btn__1" onclick="encryptText()">Encriptar</button>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="textbox right">
-            <input id="textbox-right" type="text" placeholder="" readonly>
+            <textarea id="textbox-right" placeholder="" readonly name="" id="" cols="40" rows="25"></textarea>
             <img src="assets/Muñeco.png" class="img" alt="Imagen" id="image" />
             <p id="text-below-image"> <strong>Ningún mensaje fue encontrado</strong> <br>Ingresa el texto que desees
                 encriptar o desencriptar.</p>
