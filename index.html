@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6PP0Q81P2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y6PP0Q81P2');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -18,7 +27,8 @@
 <body>
     <div class="header">
         <div class="logo">
-            <a href="https://app.aluracursos.com/user/aldoagm"><img class="logo__img" src="assets/logo.svg" alt="Logo"></a>
+            <a href="https://app.aluracursos.com/user/aldoagm"><img class="logo__img" src="assets/logo.svg"
+                    alt="Logo"></a>
         </div>
         <nav>
             <!-- <h2>Encriptador</h2> -->
@@ -27,7 +37,8 @@
 
     <div class="container">
         <div class="textbox left">
-            <textarea id="textbox-input" placeholder="Ingrese texto a encriptar" name="" id="" cols="40" rows="25" oninput="hideImage()"></textarea>
+            <textarea id="textbox-input" placeholder="Ingrese texto a encriptar" name="" id="" cols="40" rows="25"
+                oninput="hideImage()"></textarea>
             <p> <i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
             <div class="buttons">
                 <button class="btn__1" onclick="encryptText()">Encriptar</button>
@@ -46,7 +57,7 @@
         </div>
     </div>
     <div id="notification" class="notification"></div>
-    
+
     <script src="main.js"></script>
 </body>
 
