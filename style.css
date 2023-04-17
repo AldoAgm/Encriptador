@@ -15,6 +15,10 @@
     max-width: 100%;
     height: auto;
   }
+   .logo__img{
+    width: auto;
+    height: auto;
+   }
 
    /* Estilos para los contenedores de las cajas de texto */
    .container {
