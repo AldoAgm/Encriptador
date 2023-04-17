@@ -160,6 +160,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    margin-top: 50px;
   }
   /* Estilos para hacer el logotipo responsive */
   @media screen and (max-width: 768px) {
@@ -202,6 +203,7 @@
    @media (max-width: 767px) {
     .footer {
       padding: 20px 10px;
+      margin-top: 50px;
     }
   }
 
@@ -209,6 +211,7 @@
   @media (min-width: 768px) {
     .footer {
       padding: 20px;
+      margin-top: 50px;
     }
   }
   
