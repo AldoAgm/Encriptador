@@ -10,6 +10,11 @@ function hideImage() {
         textBelowImage.style.display = "none"; // Ocultar el texto debajo de la imagen
         copiar.style.display = "flex";
         textboxRight.value = textboxInput.value;
+        var regex =
+    /[W]|[áéíóúÁÉÍÓÚÑ¿¡«»“”‘’'"´`+*()\-–—/\\=|#@^\[\]{}%$§&~;,.:<>!?]|[A-Z0-9_]/g;
+  const cleanedText = textboxRight.value.replace(regex, '');
+  textboxInput.value = cleanedText;
+  textboxRight.value = cleanedText;
 
     } else {
         image.style.display = "block"; // Mostrar la imagen

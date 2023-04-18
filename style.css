@@ -38,7 +38,8 @@
   /* Estilos para la caja de texto a la derecha */
   .textbox.right {
     flex: 1;
-    margin-left: 250px;
+    margin-left: 100px;
+    margin-right: 40px;
     position: relative; /* Agregado para posicionar la imagen */
   }
 
@@ -53,16 +54,20 @@
     border-radius: 15px;
     font-size: 20px;
     color: #333;
+    resize: none;
+    outline: none;
   }
   .textbox.right textarea {
     width: 100%;
-    height: 500px;
+    height: 450px;
     padding: 10px;
     border: none;
     background-color: #f8f8f8;
     border-radius: 15px;
     font-size: 20px;
     color: #333;
+    resize: none;
+    outline: none;
   }
 
   /* Estilos para la imagen */
@@ -110,7 +115,7 @@
     border-radius: 15px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 35px;
     margin-right: 10px;
     margin-left: 10px; /* Agregado para separar los botones */
   }
@@ -160,6 +165,8 @@
     }
     .container {
         flex-wrap: wrap;
+        margin-right: 40px;
+        width: 100%;
       }
       .textbox.left {
         flex: 100%;
@@ -183,10 +190,11 @@
       
 
       .textbox.right p {
-        margin-top: -90px;
+        margin-top: -110px;
       }
       .buttons__copiar button {
         margin-top: -70px;
         margin-bottom: 50px;
+        margin: 10px 10px;
       }
   }
