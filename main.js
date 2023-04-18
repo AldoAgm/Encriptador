@@ -22,6 +22,7 @@ function hideImage() {
 // Función para encriptar el texto en el cuadro de texto derecho
 function encryptText() {
     var textboxRight = document.getElementById("textbox-right");
+    var textboxInput = document.getElementById("textbox-input");
     var text = textboxRight.value.toLowerCase();
     text = text.replace(/e/g, "enter");
     text = text.replace(/i/g, "imes");
@@ -29,6 +30,7 @@ function encryptText() {
     text = text.replace(/o/g, "ober");
     text = text.replace(/u/g, "ufat");
     textboxRight.value = text;
+    textboxInput.value = "";
 }
 
 // Función para desencriptar el texto en el cuadro de texto derecho
